@@ -33,11 +33,8 @@ public class CalGrade {
             }
 
 //        score 80-100 grade A
-            if (score>=80){
-                System.out.println("You Grade : A ");
+            else System.out.println("You Grade : A ");
 
             }
         }
     }
-
-}
