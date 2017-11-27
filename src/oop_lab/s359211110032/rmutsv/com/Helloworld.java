@@ -12,4 +12,4 @@ public class Helloworld {
         System.out.println("Faculty: Management Technology, RMUTSV");
 
     }   // main
-}   //class
+}   // class
