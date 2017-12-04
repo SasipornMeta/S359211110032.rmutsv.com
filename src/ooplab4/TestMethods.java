@@ -16,8 +16,7 @@ public class TestMethods {
     }
 
     public static void main(String[] args) {
-        // protected
-        // private
+        // protected และ private
 
         A();
         int x = 5, y = 10;
