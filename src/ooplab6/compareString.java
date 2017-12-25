@@ -15,9 +15,12 @@ public class compareString {
         else System.out.println("no.");
 
         // type 3 (compareTo())
-        if (m.compareTo(n)==0)System.out.println("yes.");           // ถ้า m และ n มีค่าเท่ากัน พิม yes
-        else if (m.compareTo(n)>=1)System.out.println("no. +");     // ถ้า m มากกว่า n พิม no+
-        else System.out.println("no. -");                           // ถ้า m น้อยกว่า n พิม no-
+        if (m.compareTo(n)==0)
+            System.out.println("yes.");             // ถ้า m และ n มีค่าเท่ากัน พิม yes
+        else if (m.compareTo(n)>=1)
+            System.out.println("no. +");            // ถ้า m มากกว่า n พิม no+
+        else
+            System.out.println("no. -");            // ถ้า m น้อยกว่า n พิม no-
 
     } // main
 } // class
