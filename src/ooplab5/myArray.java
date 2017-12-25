@@ -23,7 +23,6 @@ public class myArray {
         int num2[] = new int[MAX];
         ShowData(num2);
 
-
     } // main
 
     private static void ShowData(int[] num) {
