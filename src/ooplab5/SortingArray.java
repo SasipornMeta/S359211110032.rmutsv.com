@@ -22,8 +22,22 @@ public class SortingArray {
         findSummation(num);
         findMax(num);
         findMin(num);
+        DescendingOrder(num);
+        AscendingOrder(num);
 
     } // main
+
+    private static void AscendingOrder(Integer[] num) {                     // เรียง มากไปน้อย
+        System.out.println("Ascending Order :");
+        Arrays.sort(num,Collections.reverseOrder());
+        ShowData(num);
+    } // AscendingOrder
+
+    private static void DescendingOrder(Integer[] num) {                    // เรียง น้อยไปมาก
+        Arrays.sort(num);
+        System.out.println("Descending Order :");
+        ShowData(num);
+    } // DescendingOrder
 
     private static void findMin(Integer[] num) {                            // หาค่าน้อยสุด
         System.out.println("The Minimum value is :"+
