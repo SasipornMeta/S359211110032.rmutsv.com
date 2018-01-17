@@ -3,6 +3,7 @@ package ooplab3;
 public class TestWhileLoop {
 
     public static void main(String[] args) {
+
         // while loop
         int n = 1;
 //        while (n <= 10) {
@@ -11,6 +12,8 @@ public class TestWhileLoop {
 //            n++;
 //
 //        } // while
+
+
 
         // do-while
         do {
