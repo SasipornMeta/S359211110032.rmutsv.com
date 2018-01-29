@@ -1,33 +1,41 @@
 package ooplab7;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class mySuperCar {
+
     public static void main(String[] args) {
+        ArrayList<SuperCar> myCarList = new ArrayList<SuperCar>();
 
-        SuperCar c = new SuperCar();
-        c = inputData(c);
-        c.getSuperCarInfo(c);
+        myCarList = inputData(myCarList);
+        System.out.println("== Show Super Car Info ==");
+        for (int i=0;i<myCarList.size();i++){
+            System.out.println(myCarList.get(i).getSuperCarInfo());
+        }
 
-    } // main
+    }
 
+    private static ArrayList inputData(ArrayList myCarList) {
 
-    private static SuperCar inputData(SuperCar c) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter car info ");
-        System.out.print("Enter car brand : ");
-        c.setBrand(scanner.nextLine());
-        System.out.print("Enter car color : ");
-        c.setColor(scanner.nextLine());
-        System.out.print("Enter engine size : ");
-        c.setEnginesize(scanner.nextLine());
-        System.out.print("Enter max speed : ");
-        c.setMaxspeed(scanner.nextLine());
-        System.out.print("Enter country of origin :");
-        c.setCountry(scanner.nextLine());
-        System.out.println("-----------------------");
+        System.out.println("Please insert super car info ");
+        for (int i =0;i<10;i++){
+            System.out.println("Super car : "+(i+1));
+            System.out.print("Car Brand : ");
+            String b = scanner.nextLine();
+            System.out.print("Car Color : ");
+            String c = scanner.nextLine();
+            System.out.print("Engine Size : ");
+            String e = scanner.nextLine();
+            System.out.print("Max Speed : ");
+            String m = scanner.nextLine();
+            System.out.print("country of origin : ");
+            String cr = scanner.nextLine();
+            SuperCar car  = new SuperCar(b,c,e,m,cr);
+            myCarList.add(car);
+        }
+        return myCarList;
+    }
 
-        return c;
-
-    } // inputData
-} // class
+}
